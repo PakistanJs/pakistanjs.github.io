@@ -1,18 +1,3 @@
-// data
-const videos = [{
-	videoUrl: "https://www.youtube.com/embed/T_oPS-ZXwl8",
-	title: "Pakistan.js Screencast Series: Introduction ",
-	desc: "Learn more about why are we taking this initiative"
-}, {
-	videoUrl: "https://www.youtube.com/embed/TIHA-jZYcGI",
-	title: "Pakistan.js Episode #2: Browser (DOM, CSSOM, Render Tree & JS Exec)",
-	desc: "A quick intro on tools required when working in web development teams."
-}, {
-	videoUrl: "https://www.youtube.com/embed/zjFAs_JwYX0",
-	title: "Pakistan.js Episode #3: Tools (Version Control, Communication & Project Management)",
-	desc: "A quick introduction on how a browser renders a web page."
-}]
-
 const youtubeVideoOptions = {
 	theme: 'light',
 	color: 'white',
@@ -68,5 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	// get video list container
 	const $videoList = document.getElementById('videoList')
 
-	videos.forEach(video => $videoList.appendChild(createVideoWidget(video, youtubeVideoOptions)));
+	fetch('http://api.pakistanjs.com/video/list')
+		.then(res => res.json())
+		.then(videos => {
+			videos.forEach(video => $videoList.appendChild(createVideoWidget(video, youtubeVideoOptions)));
+		})
 })
