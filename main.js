@@ -4,13 +4,7 @@ const youtubeVideoOptions = {
 	showinfo: false
 }
 
-//<div>
-//	<iframe src=""></iframe>
-//	<div>
-//		<div>title</div>
-//		<div>details</div>
-//	</div>
-//</div>
+
 function createVideoWidget({ videoUrl, title, desc }, youtubeVideoOptions) {
 	// create all elements
 	const $videoWidget           = document.createElement('div')

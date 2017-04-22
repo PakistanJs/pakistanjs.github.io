@@ -1,6 +1,8 @@
 body {
 	font-family: "Raleway", sans-serif;
 	font-size: 14px;
+	margin: 0;
+	padding: 0;
 }
 
 h3, p {
@@ -16,30 +18,41 @@ a:hover {
 	border-bottom: 1px dashed #ddd;
 }
 
-#app {
-	padding: 1rem 5%;
+#app {}
+
+header {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.header__inner {
+	display: flex;
+	padding: 10px 20px;
 	margin: auto;
 	width: 100%;
 	max-width: 1200px;
 }
 
-header {
-	display: flex;
-    margin-bottom: 50px;	
-}
-
 .logo {
-	width: 50px;
-	height: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
 }
 
 .slogan {
+	font-size: 12px;
 	margin-left: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 }
 
+#videoList {
+	min-height: 500px;
+	padding: 30px 20px;
+	margin: auto;
+	width: 100%;
+	max-width: 1200px;
+}
 
 .video__widget {
 	padding-bottom: 25px;
@@ -64,6 +77,10 @@ header {
 }
 
 footer {
+	padding: 10px 20px;
+	margin: auto;
+	width: 100%;
+	max-width: 1200px;
 	padding: 40px 0;
 	border-top: 1px solid #eee;
 	margin-top: 50px;
