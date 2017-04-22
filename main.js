@@ -1,9 +1,11 @@
+const $videoList = document.getElementById('videoList')
+const $playlists = document.querySelector('#playLists > .topics')
+
 const youtubeVideoOptions = {
 	theme: 'light',
 	color: 'white',
 	showinfo: false
 }
-
 
 function createVideoWidget({ videoUrl, title, desc }, youtubeVideoOptions) {
 	// create all elements
@@ -43,13 +45,36 @@ function createVideoWidget({ videoUrl, title, desc }, youtubeVideoOptions) {
 	return $videoWidget;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-	// get video list container
-	const $videoList = document.getElementById('videoList')
+function createPlaylistItem(playlist) {
+	const $link = document.createElement('a')
 
-	fetch('http://api.pakistanjs.com/video/list')
+	$link.innerHTML = playlist.title
+	$link.href = `#${playlist.id}`
+
+	return $link;
+}
+
+function renderVideoList() {
+	const { hash } = window.location
+	let playlistId = hash && hash.length > 1 ? hash.slice(1) : $playlists.firstChild.href.split('#')[1]
+
+	$videoList.innerHTML = null
+
+	fetch(`http://api.pakistanjs.com/${playlistId}/list`)
 		.then(res => res.json())
 		.then(videos => {
 			videos.forEach(video => $videoList.appendChild(createVideoWidget(video, youtubeVideoOptions)));
 		})
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+	fetch('http://api.pakistanjs.com/playlists')
+		.then(res => res.json())
+		.then(playlists => {
+			playlists.forEach(playlist => $playlists.appendChild(createPlaylistItem(playlist)));
+
+			setTimeout(renderVideoList, 100)
+		})
+
+	window.onhashchange = renderVideoList;
 })
