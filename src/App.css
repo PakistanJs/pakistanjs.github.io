@@ -1,0 +1,28 @@
+body {
+	font-family: "Raleway", sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+h3, p {
+	margin: 0;
+}
+
+a, a:hover {
+	padding: 5px;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 1px dashed #ddd;
+}
+
+.content {
+    min-height: 500px;
+    padding: 30px 20px;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+}

@@ -1,0 +1,21 @@
+.videoWidget {
+	padding-bottom: 25px;
+	border-bottom: 1px solid #f1f1f1;
+	width: 550px;
+	margin-bottom: 40px;
+}
+
+.videoContainer {
+	border-radius: 4px;
+}
+
+.detailsTitle {
+	font-size: 16px;
+	font-weight: 600;
+	color: #666;
+	padding: 8px 0;
+}
+
+.detailsDesc {
+	color: #666;
+}

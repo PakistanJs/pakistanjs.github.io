@@ -1,0 +1,20 @@
+.sidebar {
+    width: 200px;
+    display: block;
+    min-height: 100px;
+    border-right: 1px solid #f1f1f1;
+    margin-right: 20px;
+}
+
+.header {
+	font-weight: 600;
+	color: #666;
+	padding: 10px 0;
+}
+
+.items > a {
+    display: block;
+    cursor: pointer;
+    color: #666;
+    font-size: 13px;
+}

@@ -1,0 +1,25 @@
+.header {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.headerInner {
+	display: flex;
+	padding: 10px 20px;
+	margin: auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+}
+
+.slogan {
+	font-size: 12px;
+	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
