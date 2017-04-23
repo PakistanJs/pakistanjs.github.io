@@ -1,0 +1,83 @@
+.Header__header {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.Header__headerInner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 10px 20px;
+	margin: auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.Header__logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+}
+
+.Header__slogan {
+	font-size: 12px;
+	margin-left: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+}.Sidebar__sidebar {
+    width: 200px;
+    display: block;
+    min-height: 100px;
+    border-right: 1px solid #f1f1f1;
+    margin-right: 20px;
+}
+
+.Sidebar__header {
+	font-weight: 600;
+	color: #666;
+	padding: 10px 0;
+}
+
+.Sidebar__items > a {
+    display: block;
+    cursor: pointer;
+    color: #666;
+    font-size: 13px;
+}.VideoWidget__videoWidget {
+	padding-bottom: 25px;
+	border-bottom: 1px solid #f1f1f1;
+	width: 550px;
+	margin-bottom: 40px;
+}
+
+.VideoWidget__videoContainer {
+	border-radius: 4px;
+}
+
+.VideoWidget__detailsTitle {
+	font-size: 16px;
+	font-weight: 600;
+	color: #666;
+	padding: 8px 0;
+}
+
+.VideoWidget__detailsDesc {
+	color: #666;
+}
+.Footer__footer {
+	padding: 10px 20px;
+	margin: auto;
+	width: 100%;
+	max-width: 1200px;
+	padding: 40px 0;
+	border-top: 1px solid #eee;
+	margin-top: 50px;
+}.App__test {
+	font-size: 13px;
+}
