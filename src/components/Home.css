@@ -1,0 +1,30 @@
+.home{
+	width: 100%;
+}
+
+.hero {
+	padding: 20px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	align-items: center;
+	flex-direction: column;
+	border-bottom: 1px solid #ddd;
+}
+
+.heroHeading {
+	font-weight: 600;
+	font-size: 24px;
+}
+
+.heroLinks {
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.heroLink {
+	margin-right: 10px;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}

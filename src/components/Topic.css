@@ -1,0 +1,63 @@
+.container {
+	margin: auto;
+    max-width: 1200px;
+}
+
+.videoDetail {
+	display: flex;
+}
+
+.videoList {
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	height: 450px;
+	overflow: scroll;
+	border: 1px solid #ddd;
+	margin-left: 10px;
+}
+
+.videoList > a {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+	height: 50px;
+	display: flex;
+	flex-direction: column;
+	color: #555;
+}
+
+.videoList > .title {
+	font-weight: 600;
+}
+
+.selectedVideo {
+	background: black;
+	color: #fff;
+}
+
+.topicExtras {
+	margin-top: 50px;
+}
+
+.tabs {
+	display: flex;
+	margin-bottom: -2px;
+}
+
+.tab {
+	padding: 10px 20px;
+}
+
+.tab.active {
+    padding: 10px 20px;
+    border: 2px solid #74bcff;
+    border-radius: 4px 4px 0 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.tabContent {
+	border: 2px solid #74bcff;
+	display: flex;
+}

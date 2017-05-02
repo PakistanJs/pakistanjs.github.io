@@ -10,19 +10,14 @@ h3, p {
 }
 
 a, a:hover {
-	padding: 5px;
 	text-decoration: none;
-}
-
-a:hover {
-	border-bottom: 1px dashed #ddd;
 }
 
 .content {
     min-height: 500px;
-    padding: 30px 20px;
+    /*padding: 30px 20px;*/
     margin: auto;
     width: 100%;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     display: flex;
 }
