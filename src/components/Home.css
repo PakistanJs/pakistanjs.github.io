@@ -2,20 +2,29 @@
 	width: 100%;
 }
 
+.container {
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	background: #3933c4;
+}
+
 .hero {
 	padding: 20px;
-    height: 150px;
+    height: 250px;
     display: flex;
     justify-content: center;
-    align-items: center;
-	align-items: center;
 	flex-direction: column;
-	border-bottom: 1px solid #ddd;
+	margin: auto;
+	max-width: 1200px;
+	padding-top: 15px;
+	width: 100%;
 }
 
 .heroHeading {
-	font-weight: 600;
-	font-size: 24px;
+    font-weight: 900;
+    font-size: 32px;
+    margin-left: 10px;
+    color: #fff;
 }
 
 .heroLinks {
@@ -24,7 +33,15 @@
 }
 
 .heroLink {
-	margin-right: 10px;
+    margin-right: 10px;
     padding: 10px;
     border-right: 1px solid #ddd;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.heroLink:last-child {
+	margin-right: 0;
+	border-right: none;
 }

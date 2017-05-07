@@ -4,7 +4,7 @@ import styles from './VideoWidget.css'
 const VideoWidget = ({ videoUrl, title, desc }) => (
 	<div className={styles.videoWidget}>
 		<iframe
-			src={`${videoUrl}?theme=light&color=white&showinfo=false`}
+			src={`${videoUrl}?theme=light&color=white&showinfo=0`}
 			width="550"
 			height="310"
 			frameBorder="0"

@@ -7,6 +7,8 @@ import Topic from './components/Topic'
 import Footer from './components/Footer'
 import ChatBubble from './components/ChatBubble'
 import styles from './App.css'
+import { observer } from 'mobx-react'
+
 import {
   BrowserRouter as Router,
   Route

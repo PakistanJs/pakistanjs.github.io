@@ -1,10 +1,16 @@
 .container {
 	margin: auto;
-    max-width: 1200px;
+	max-width: 1200px;
+	padding-top: 30px;
+	width: 100%;
 }
 
 .videoDetail {
 	display: flex;
+}
+
+.videoFrame {
+	border-radius: 2px;
 }
 
 .videoList {
@@ -15,6 +21,7 @@
 	overflow: scroll;
 	border: 1px solid #ddd;
 	margin-left: 10px;
+	border-radius: 2px;
 }
 
 .videoList > a {
@@ -26,13 +33,20 @@
 	color: #555;
 }
 
-.videoList > .title {
-	font-weight: 600;
+.videoList .title {
+	display: flex;
+}
+
+.videoList .titleCounter {
+	font-weight: 800;
+	font-size: 16px;
+	padding-right: 10px;
 }
 
 .selectedVideo {
-	background: black;
-	color: #fff;
+	background: #565fe9;
+	font-weight: 600;
+	color: #fff !important;
 }
 
 .topicExtras {
@@ -51,7 +65,7 @@
 .tab.active {
     padding: 10px 20px;
     border: 2px solid #74bcff;
-    border-radius: 4px 4px 0 0;
+    border-radius: 2px 2px 0 0;
     border-bottom: 0;
     box-sizing: border-box;
     background: #fff;

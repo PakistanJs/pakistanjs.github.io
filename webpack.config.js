@@ -23,7 +23,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.(jpg|png)$/, loader: 'url-loader?limit=10000' },
+      { test: /\.(jpg|png)$/, loader: 'url-loader' },
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract({
@@ -42,5 +42,6 @@ module.exports = {
   ],
   devServer: {
     historyApiFallback: true
-  }
+  },
+  devtool: 'eval-source-map'
 }

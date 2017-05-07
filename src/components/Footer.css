@@ -1,9 +1,20 @@
 .footer {
-	padding: 10px 20px;
+	width: 100%;
+	border-top: 1px solid #eee;
+	margin-top: 50px;
+	background: #fff;
+}
+
+.footerInner {
+	background: #fff;
+	padding: 30px 15px;
 	margin: auto;
 	width: 100%;
 	max-width: 1200px;
-	padding: 40px 0;
-	border-top: 1px solid #eee;
-	margin-top: 50px;
+}
+
+.footerInner > a {
+	font-weight: 600;
+	padding: 5px 10px;
+	color: #777;
 }
