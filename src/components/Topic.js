@@ -42,11 +42,11 @@ export default class Topic extends Component {
 				rejected:  error => <div>Ooops..</div>,
 				fulfilled: (videos) => (
 					<div className={styles.videoList}>
-						{videos.map(({ videoUrl, title, desc }) => (
+						{videos.map(({ videoUrl, title }) => (
 							<a
 								href={`#${videoUrl}`}
 								className={videoUrl === this.props.topics.selectedVideo.videoUrl && styles.selectedVideo}
-								onClick={() => this.props.topics.setSelectedVideo({ videoUrl, title, desc })}>
+								onClick={() => this.props.topics.setSelectedVideo({ videoUrl, title })}>
 								<div className={styles.title}>
 									<span className={styles.titleCounter}>{videoCounter++}</span>{title}
 								</div>

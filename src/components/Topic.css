@@ -7,6 +7,7 @@
 
 .videoDetail {
 	display: flex;
+	min-height: 452px;
 }
 
 .videoFrame {
@@ -27,10 +28,12 @@
 .videoList > a {
 	padding: 10px;
 	border-bottom: 1px solid #ddd;
-	height: 50px;
+	height: 65px;
 	display: flex;
 	flex-direction: column;
 	color: #555;
+	min-height: 65px;
+	box-sizing: border-box;
 }
 
 .videoList .title {
@@ -41,6 +44,7 @@
 	font-weight: 800;
 	font-size: 16px;
 	padding-right: 10px;
+	min-width: 20px;
 }
 
 .selectedVideo {

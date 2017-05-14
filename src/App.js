@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import DevTools from 'mobx-react-devtools'
+import { observer } from 'mobx-react'
+
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 import Home from './components/Home'
@@ -6,8 +9,12 @@ import Topics from './components/Topics'
 import Topic from './components/Topic'
 import Footer from './components/Footer'
 import ChatBubble from './components/ChatBubble'
+import Experts from './components/Experts'
+
+import ManageCourses from './containers/ManageCourses'
+import ManageSections from './containers/ManageSections'
+
 import styles from './App.css'
-import { observer } from 'mobx-react'
 
 import {
   BrowserRouter as Router,
@@ -25,9 +32,13 @@ export default class App extends Component {
 					<Route exact={true} path='/' component={Home} />
 					<Route path='/topics' component={Topics} />
 					<Route path='/topic/:id' component={Topic} />
+					<Route path='/experts' component={Experts} />
+					<Route path='/courses' component={ManageCourses} />
+					<Route path='/sections' component={ManageSections} />
 				</div>
 				<Footer />
 				<ChatBubble />
+				<DevTools />
 			</div>
 		)
 	}
