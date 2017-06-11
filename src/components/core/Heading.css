@@ -1,0 +1,27 @@
+.heading {
+  color: #2e3d49;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+.size_small {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.size_medium {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.size_large {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.size_xlarge {
+  font-size: 28px;
+  margin-bottom: 10px;
+}

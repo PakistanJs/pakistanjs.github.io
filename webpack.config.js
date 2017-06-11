@@ -40,6 +40,13 @@ module.exports = {
     new ExtractTextPlugin('[name]_[hash]_bundle.css'),
     new CleanWebpackPlugin('dist')
   ],
+  resolve: {
+    modules: [
+      'node_modules',
+      path.resolve(__dirname, 'src')
+    ],
+    extensions: ['.js', '.json', '.jsx', '.css'],
+  },
   devServer: {
     historyApiFallback: true
   },

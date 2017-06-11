@@ -1,0 +1,22 @@
+.quiz {
+	width: 400px;
+	background: #eee;
+	border-radius: 4px;
+	padding: 20px;
+}
+
+.title {
+	border-bottom: 1px solid #ddd;
+}
+
+.options {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid #fff;
+	padding: 15px 0px;
+	margin-bottom: 25px;
+}
+
+.option {
+	padding: 8px 0;
+}

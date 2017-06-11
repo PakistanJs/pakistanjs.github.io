@@ -1,0 +1,24 @@
+.container {
+	width: 430px;
+	height: 170px;
+	display: flex;
+	border: 1px solid #eee;
+	border-radius: 2px;
+	flex-direction: column;
+	justify-content: space-between;
+	background: #fff;
+}
+
+.content {
+	padding: 12px;
+}
+
+.footer {
+	margin: 5px 12px;
+	height: 30px;
+	border-top: 1px solid #eee;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 4px;
+}

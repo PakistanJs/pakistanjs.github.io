@@ -1,0 +1,100 @@
+.container {
+	margin: auto;
+	/*max-width: 1200px;*/
+	/*padding: 0 30px;*/
+	/*padding-top: 30px;*/
+	width: 100%;
+}
+
+.videoDetail {
+	display: flex;
+	min-height: 452px;
+}
+
+.videoFrameWrapper {
+	width: 100%;
+	height: 680px;
+}
+
+.videoFrame {
+	border-radius: 2px;
+	width: 100%;
+	height: 100%;
+}
+
+.videoList {
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	height: 450px;
+	overflow: scroll;
+	border: 1px solid #ddd;
+	margin-left: 10px;
+	border-radius: 2px;
+}
+
+.videoList > .video {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+	height: 65px;
+	display: flex;
+	flex-direction: column;
+	color: #555;
+	min-height: 65px;
+	box-sizing: border-box;
+}
+
+.videoList .title {
+	display: flex;
+}
+
+.videoList .titleCounter {
+	font-weight: 800;
+	font-size: 16px;
+	padding-right: 10px;
+	min-width: 20px;
+}
+
+.videoList > .addTopic {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+	height: 260px;
+	display: flex;
+	flex-direction: column;
+	color: #555;
+	min-height: 260px;
+	box-sizing: border-box;
+}
+
+.selectedTopic {
+	background: #565fe9;
+	font-weight: 600;
+	color: #fff !important;
+}
+
+.topicExtras {
+	margin-top: 50px;
+}
+
+.tabs {
+	display: flex;
+	margin-bottom: -2px;
+}
+
+.tab {
+	padding: 10px 20px;
+}
+
+.tab.active {
+    padding: 10px 20px;
+    border: 2px solid #74bcff;
+    border-radius: 2px 2px 0 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.tabContent {
+	border: 2px solid #74bcff;
+	display: flex;
+}

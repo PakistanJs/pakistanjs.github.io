@@ -8,7 +8,7 @@ import { Dropdown } from 'semantic-ui-react'
 class Header extends Component {
 	renderAdminDropdown() {
 		const { currentUser } = this.props.user
-		if (currentUser.isAdmin) {
+		if (currentUser) {
 			return (
 				<Dropdown text={`Hello, ${currentUser.name}`}>
 					<Dropdown.Menu>
@@ -25,7 +25,7 @@ class Header extends Component {
 					</Dropdown.Menu>
 				</Dropdown>
 			)
-		} 
+		}
 	}
 
 	render() {

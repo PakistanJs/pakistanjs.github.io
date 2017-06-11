@@ -1,0 +1,41 @@
+.container {
+	width: 100%;
+}
+
+.innerContainer {
+	padding: 60px 30px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: auto;
+	max-width: 980px;
+	width: 100%;
+}
+
+.block {
+	margin-top: 50px;
+}
+
+.courseList {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.joinSlack, .joinFB {
+	font-size: 20px;
+	font-weight: 600;
+	display: flex;
+	padding: 6px 0px;
+}
+
+.joinSlack > img {
+	width: 75px;
+	height: 21px;
+	margin-left: 6px;
+}
+
+.joinFB > img {
+	width: 124px;
+	height: 21px;
+	margin-left: 2px;
+}

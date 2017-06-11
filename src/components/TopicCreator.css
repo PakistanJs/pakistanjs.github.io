@@ -1,0 +1,13 @@
+.editor {
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+
+.buttons > * {
+	margin-right: 20px;
+}
+
+.contentPane {
+	margin-top: 30px;
+}

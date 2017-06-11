@@ -5,8 +5,8 @@ const VideoWidget = ({ videoUrl, title, desc }) => (
 	<div className={styles.videoWidget}>
 		<iframe
 			src={`${videoUrl}?theme=light&color=white&showinfo=0`}
-			width="550"
-			height="310"
+			width="720"
+			height="360"
 			frameBorder="0"
 		/>
 		<div className={styles.detailsContainers}>

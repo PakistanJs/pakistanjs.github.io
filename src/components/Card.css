@@ -1,0 +1,21 @@
+.container {
+  width: 250px;
+  height: 260px;
+  display: flex;
+  border: 1px solid #eee;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  border-radius: 2px;
+  flex-direction: column;
+  background: #fff;
+}
+
+.thumb {
+  height: 130px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.bottom {
+  padding: 12px;
+}
